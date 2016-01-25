@@ -10,7 +10,26 @@ public class HelloWorld {
 			HashMap<String, Object> map = new HashMap<String, Object>();
 			map.put("hello", "Hello, World!");
 
+
 			return new ModelAndView(map, "page");
 		}, new ThymeleafTemplateEngine());
+
+		get("/add", (req, res) -> {
+			int first = Integer.parseInt(req.queryParams("first"));
+			int second = Integer.parseInt(req.queryParams("second"));
+
+			return first + second;
+		});
+
+		get("/multiply", (req, res) -> {
+			int first = Integer.parseInt(req.queryParams("first"));
+			int second = Integer.parseInt(req.queryParams("second"));
+
+			return first * second;
+		});
+
+		get("/sum", (req, res) -> req.queryParams().stream()
+				.mapToInt(s -> Integer.parseInt(req.queryParams(s)))
+				.sum());
 	}
 }
