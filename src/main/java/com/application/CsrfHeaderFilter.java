@@ -14,7 +14,7 @@ import java.io.IOException;
 
 public class CsrfHeaderFilter extends OncePerRequestFilter {
 	@Override
-	protected void doFinterlInterlan(
+	protected void doFilterInternal(
 			HttpServletRequest request,
 			HttpServletResponse response,
 			FilterChain filterChain

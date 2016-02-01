@@ -43,11 +43,13 @@ public class UiApplication {
 			http
 				.httpBasic()
 				.and()
-				.authorizeRequests()
-				.antMatchers("/ihdex.html", "/home.html", "login.html").permitAll()
-				.anyRequest().authenticated()
+					.logout()
 				.and()
-				.addFilterAfter(new CsrfHeaderFilter(), CsrfFilter.class);
+					.authorizeRequests()
+					.antMatchers("/ihdex.html", "/home.html", "login.html").permitAll()
+				.	anyRequest().authenticated()
+				.and()
+					.addFilterAfter(new CsrfHeaderFilter(), CsrfFilter.class);
 		}
 
 		private CsrfTokenRepository csrfTokenRepository() {
