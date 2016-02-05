@@ -1,22 +1,15 @@
 package com.application;
 
+import com.json.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.core.annotation.Order;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.web.csrf.CsrfFilter;
-import org.springframework.security.web.csrf.CsrfTokenRepository;
-import org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.client.ClientHttpRequestInterceptor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
-import java.security.Principal;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 @SpringBootApplication
 @RestController
@@ -30,35 +23,23 @@ public class UiApplication {
 		return model;
 	}
 
-	@RequestMapping("/user")
-	public Principal user(Principal user) {
-		return user;
+	@RequestMapping("/bus")
+	public Map<String, Object> bus() {
+		RestTemplate restTemplate = new RestTemplate();
+
+        Quote quote = restTemplate.getForObject("http://gturnquist-quoters.cfapps.io/api/random", Quote.class);
+        System.out.println(quote.toString());
+
+        VehicleActivity test = restTemplate.getForObject("http://data.itsfactory.fi/journeys/api/1/vehicle-activity", VehicleActivity.class);
+        System.out.println( test );
+
+
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("quota", quote);
+        model.put("siri", test);
+
+		return model;
 	}
-
-	@Configuration
-	@Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
-	protected static class SecurityConfiguration extends WebSecurityConfigurerAdapter {
-		@Override
-		protected void configure(HttpSecurity http) throws Exception {
-			http
-				.httpBasic()
-				.and()
-					.logout()
-				.and()
-					.authorizeRequests()
-					.antMatchers("/ihdex.html", "/home.html", "login.html").permitAll()
-				.	anyRequest().authenticated()
-				.and()
-					.addFilterAfter(new CsrfHeaderFilter(), CsrfFilter.class);
-		}
-
-		private CsrfTokenRepository csrfTokenRepository() {
-			HttpSessionCsrfTokenRepository repository = new HttpSessionCsrfTokenRepository();
-			repository.setHeaderName("X-XRSF-TOKEN");
-			return repository;
-		}
-	}
-
 
 	public static void main(String[] args) {
 		SpringApplication.run(UiApplication.class, args);
