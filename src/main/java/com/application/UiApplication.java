@@ -24,21 +24,10 @@ public class UiApplication {
 	}
 
 	@RequestMapping("/bus")
-	public Map<String, Object> bus() {
+	public VehicleActivity bus() {
 		RestTemplate restTemplate = new RestTemplate();
-
-        Quote quote = restTemplate.getForObject("http://gturnquist-quoters.cfapps.io/api/random", Quote.class);
-        System.out.println(quote.toString());
-
         VehicleActivity test = restTemplate.getForObject("http://data.itsfactory.fi/journeys/api/1/vehicle-activity", VehicleActivity.class);
-        System.out.println( test );
-
-
-        Map<String, Object> model = new HashMap<String, Object>();
-        model.put("quota", quote);
-        model.put("siri", test);
-
-		return model;
+		return test;
 	}
 
 	public static void main(String[] args) {

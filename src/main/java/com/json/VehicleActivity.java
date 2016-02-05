@@ -28,4 +28,12 @@ public class VehicleActivity {
     public void setBody(Body[] body) {
         this.body = body;
     }
+
+    public Data getData() {
+        return data;
+    }
+
+    public void setData(Data data) {
+        this.data = data;
+    }
 }

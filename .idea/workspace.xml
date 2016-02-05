@@ -2,29 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cdd334f-173c-4cad-b59c-f45da5837d24" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/application/LoggingRequestInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/json/Body.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/json/Data.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/json/Quote.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/json/ServiceDelivery.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/json/Siri.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/json/TampereSiri.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/json/Value.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/json/VehicleActivity.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/application/CsrfHeaderFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/application/CsrfHeaderFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/application/UiApplication$SecurityConfiguration.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/json/MonitoredVehicleJourney.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/json/Record.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/json/VehicleLocation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/application/UiApplication.class" afterPath="$PROJECT_DIR$/target/classes/com/application/UiApplication.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/json/VehicleActivity.class" afterPath="$PROJECT_DIR$/target/classes/com/json/VehicleActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-demo.iml" afterPath="$PROJECT_DIR$/spring-demo.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/application/UiApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/application/UiApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/home.html" afterPath="$PROJECT_DIR$/src/main/resources/static/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/tampereCoaches.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tampereCoaches.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/home.html" afterPath="$PROJECT_DIR$/target/classes/static/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/index.html" afterPath="$PROJECT_DIR$/target/classes/static/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/tampereCoaches.js" afterPath="$PROJECT_DIR$/target/classes/static/js/tampereCoaches.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/json/Body.java" afterPath="$PROJECT_DIR$/src/main/java/com/json/Body.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/json/VehicleActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/json/VehicleActivity.java" />
     </list>
     <ignored path="mooc-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,16 +32,94 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UiApplication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UiApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/application/UiApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60840106">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1287#1303#0" expanded="true" />
-                <element signature="e#1436#1437#0" expanded="true" />
-                <element signature="e#1491#1492#0" expanded="true" />
+                <element signature="e#1097#1098#0" expanded="true" />
+                <element signature="e#1152#1153#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Data.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/json/Data.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Body.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/json/Body.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <folding>
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+                <element signature="e#493#494#0" expanded="true" />
+                <element signature="e#534#535#0" expanded="true" />
+                <element signature="e#571#572#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+                <element signature="e#683#684#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+                <element signature="e#796#797#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VehicleActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/json/VehicleActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MonitoredVehicleJourney.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/json/MonitoredVehicleJourney.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6666667">
+              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <folding>
+                <element signature="e#729#730#0" expanded="true" />
+                <element signature="e#767#768#0" expanded="true" />
+                <element signature="method#setDestinationShortName#0;class#MonitoredVehicleJourney#0" expanded="false" />
+                <element signature="method#setOriginAimedDepartureTime#0;class#MonitoredVehicleJourney#0" expanded="false" />
+                <element signature="e#2634#2635#0" expanded="true" />
+                <element signature="e#2672#2673#0" expanded="true" />
+                <element signature="e#2743#2744#0" expanded="true" />
+                <element signature="e#2797#2798#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VehicleLocation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/json/VehicleLocation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#288#289#0" expanded="true" />
+                <element signature="e#320#321#0" expanded="true" />
+                <element signature="e#370#371#0" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#447#448#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#526#527#0" expanded="true" />
+                <element signature="e#566#567#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,10 +177,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/json/Siri.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/json/TampereSiri.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/json/ServiceDelivery.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/application/UiApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/json/Body.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/json/VehicleActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/json/Data.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/json/VehicleActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/json/Record.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/json/Body.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/UiApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/json/VehicleLocation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/json/MonitoredVehicleJourney.java" />
       </list>
     </option>
   </component>
@@ -231,7 +298,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="json" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc-java-serverside-recap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -608,7 +709,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1216" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -620,7 +721,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29139686" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -639,7 +740,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -654,9 +755,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1287#1303#0" expanded="true" />
-            <element signature="e#1436#1437#0" expanded="true" />
-            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="e#1097#1098#0" expanded="true" />
+            <element signature="e#1152#1153#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -838,7 +938,7 @@
         <state vertical-scroll-proportion="0.34552845">
           <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -869,8 +969,8 @@
         <state vertical-scroll-proportion="0.5298103">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <element signature="e#190#191#0" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#190#191#0" expanded="false" />
+            <element signature="e#245#246#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -902,48 +1002,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/json/VehicleActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/UiApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
           <folding>
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1097#1098#0" expanded="true" />
+            <element signature="e#1152#1153#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/json/Body.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/json/Data.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/UiApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/json/Record.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60840106">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/json/Body.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1287#1303#0" expanded="true" />
-            <element signature="e#1436#1437#0" expanded="true" />
-            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/json/VehicleActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/json/VehicleLocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/json/MonitoredVehicleJourney.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6666667">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding>
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="method#setDestinationShortName#0;class#MonitoredVehicleJourney#0" expanded="false" />
+            <element signature="method#setOriginAimedDepartureTime#0;class#MonitoredVehicleJourney#0" expanded="false" />
+            <element signature="e#2634#2635#0" expanded="true" />
+            <element signature="e#2672#2673#0" expanded="true" />
+            <element signature="e#2743#2744#0" expanded="true" />
+            <element signature="e#2797#2798#0" expanded="true" />
           </folding>
         </state>
       </provider>
