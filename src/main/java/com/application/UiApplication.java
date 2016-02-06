@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.client.ClientHttpRequestInterceptor;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -23,10 +24,10 @@ public class UiApplication {
 		return model;
 	}
 
-	@RequestMapping("/bus")
+	@RequestMapping(method = RequestMethod.POST, value = "/bus")
 	public VehicleActivity bus() {
 		RestTemplate restTemplate = new RestTemplate();
-        VehicleActivity test = restTemplate.getForObject("http://data.itsfactory.fi/journeys/api/1/vehicle-activity", VehicleActivity.class);
+		VehicleActivity test = restTemplate.getForObject("http://data.itsfactory.fi/journeys/api/1/vehicle-activity", VehicleActivity.class);
 		return test;
 	}
 
