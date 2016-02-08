@@ -1,6 +1,8 @@
 "use strict";
 
-define(["angularAMD", "angular-route"], function(angularAMD) {
+define(["angularAMD", "angular-route", "leaflet"], function(angularAMD, angularRoute, leaflet) {
+    // TODO host images locally
+    leaflet.Icon.Default.imagePath = 'http://cdn.leafletjs.com/leaflet-0.7.3/images';
 
 	var app = angular.module("webapp", [ "ngRoute" ])
     	.config(function($routeProvider, $httpProvider) {

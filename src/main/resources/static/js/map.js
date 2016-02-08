@@ -1,6 +1,20 @@
 "use strict";
 
-define([ "app" ], function(app) {
+define([ "app", "leaflet" ], function(app, leaflet) {
+    setTimeout(function() {
+        var map = leaflet
+            .map("map")
+            .setView([51.505, -0.09], 13);;
+
+        L.tileLayer('https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+            maxZoom: 18,
+            id: 'your.mapbox.project.id',
+            accessToken: "pk.eyJ1IjoibWlrYXR1cnVuZW4iLCJhIjoiY2lrZHNrY3piMDAyOXRybHl6cWFoY2VociJ9.gLeO3EY36ZGkH8tqbXLg8g"
+        })
+        .addTo(map);
+    });
+
 	// Note we have not wrapped angular into any module loader at this point, we should!
 	app.controller("map", function($scope, $http) {
 		$http.get("/resources").success(function(model) {
