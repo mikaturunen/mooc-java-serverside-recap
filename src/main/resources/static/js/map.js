@@ -3,17 +3,6 @@
 define([ "app", "leaflet" ], function(app, leaflet) {
 	// Note we have not wrapped angular into any module loader at this point, we should!
 	app.controller("map", function($scope, $http) {
-		$http.get("/resources").success(function(model) {
-			$scope.greeting = model;
-		});
-
-		$http.post("bus", {}).success(function(model) {
-			console.log(model);
-		})
-		.error(function(error) {
-			console.log(error);
-		});
-
         var map = leaflet
             .map("map")
             .setView([61.50, 23.7667], 13);
@@ -24,6 +13,21 @@ define([ "app", "leaflet" ], function(app, leaflet) {
             accessToken: "pk.eyJ1IjoibWlrYXR1cnVuZW4iLCJhIjoiY2lrZHNrY3piMDAyOXRybHl6cWFoY2VociJ9.gLeO3EY36ZGkH8tqbXLg8g"
         })
         .addTo(map);
+
+		$http.get("/resources").success(function(model) {
+			$scope.greeting = model;
+		});
+
+		$http.post("bus", {}).success(function(model) {
+			model.body.forEach(function(bus) {
+			    console.log(bus.monitoredVehicleJourney.vehicleLocation);
+			    leaflet.marker([bus.monitoredVehicleJourney.vehicleLocation.latitude, bus.monitoredVehicleJourney.vehicleLocation.longitude])
+			        .addTo(map);
+			});
+		})
+		.error(function(error) {
+			console.log(error);
+		});
 
 	});
 })
