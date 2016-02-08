@@ -25,7 +25,6 @@ html, body, #map, .row-fluid{
 }
 
 body {
-    padding-top: 40px;              /*for navbar*/
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
