@@ -8,7 +8,6 @@ define([ "app", "leaflet" ], function(app, leaflet) {
             .setView([61.50, 23.7667], 13);
 
         L.tileLayer('https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token={accessToken}', {
-            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
             maxZoom: 18,
             accessToken: "pk.eyJ1IjoibWlrYXR1cnVuZW4iLCJhIjoiY2lrZHNrY3piMDAyOXRybHl6cWFoY2VociJ9.gLeO3EY36ZGkH8tqbXLg8g"
         })
@@ -18,17 +17,38 @@ define([ "app", "leaflet" ], function(app, leaflet) {
 			$scope.greeting = model;
 		});
 
-		$http.post("bus", {}).success(function(model) {
-			model.body.forEach(function(bus) {
-			    console.log(bus.monitoredVehicleJourney.vehicleLocation);
-			    leaflet.marker([bus.monitoredVehicleJourney.vehicleLocation.latitude, bus.monitoredVehicleJourney.vehicleLocation.longitude])
-			        .addTo(map);
-			});
-		})
-		.error(function(error) {
-			console.log(error);
-		});
+        var TIMEOUT = 5000;
+        var pins = {};
 
+       // var getBusPins = function(map) {
+            $http.post("bus", {}).success(function(model) {
+                console.log(model.body);
+                model.body.forEach(function(bus) {
+                    console.log(bus.monitoredVehicleJourney.vehicleLocation);
+                    var pinModel = {
+                        id: bus.monitoredVehicleJourney.vehicleRef,
+                        pin: new leaflet.Marker({
+                            lat: bus.monitoredVehicleJourney.vehicleLocation.latitude,
+                            lon: bus.monitoredVehicleJourney.vehicleLocation.longitude
+                        })
+                    };
+
+                    pins[pinModel.id] = pinModel;
+                    // setTimeout(function() { getBusPins(); }, TIMEOUT);
+                });
+
+                console.log(pins);
+                Object.keys(pins).forEach(function(key) {
+                    pins[key].pin.addTo(map);
+                });
+            })
+            .error(function(error) {
+                // setTimeout(function() { getBusPins(); }, TIMEOUT);
+                console.log(error);
+            });
+        // };
+
+      //  getBusPins();
 	});
 })
 
