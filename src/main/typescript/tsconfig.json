@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": false
+    },
+    "filesGlob": [
+        "./**/*.ts"
+    ],
+    "files": [
+        "./controllers/map.ts"
+    ]
+}
