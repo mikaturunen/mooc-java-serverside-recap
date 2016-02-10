@@ -9,7 +9,7 @@ define(["angularAMD", "angular-route", "leaflet"], function(angularAMD, angularR
     		$routeProvider.when("/", angularAMD.route({
     			templateUrl: 	"map.html",
     			controller: 	"map",
-    			controllerUrl:	"map"
+    			controllerUrl:	"controllers/map"
     		}))
     		.when("/login", angularAMD.route({
     			templateUrl: 	"login.html",
