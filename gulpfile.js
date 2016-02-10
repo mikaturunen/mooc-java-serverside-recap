@@ -20,8 +20,8 @@ gulp.task("typescript", function() {
     return gulp
         .src( typeScriptSource )
         // Pipe source to lint
-        .pipe(tslint())
-        .pipe(tslint.report("verbose"))
+       // .pipe(tslint())
+       // .pipe(tslint.report("verbose"))
         // Push through to compiler
         .pipe(ts({
             typescript: require("typescript"),

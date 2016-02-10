@@ -23,7 +23,7 @@ define(["angularAMD", "angular-route", "leaflet"],
             $httpProvider.defaults.headers.common[ "X-Requested-With" ] = "XMLHttpRequest";
         })
         .controller("login", ($rootScope: any, $scope: any, $http: any, $location: any) => {
-
+            //
         });
 
     return angularAMD.bootstrap(app);
