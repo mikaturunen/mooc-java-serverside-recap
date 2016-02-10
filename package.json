@@ -4,9 +4,9 @@
   "description": "",
   "main": "",
   "scripts": {
-    "tsc:w": "tsc -w -p src\\main\\typescript\\",
-    "babel:w": "babel ",
-    "develop": "npm run tsc:w"
+    "tsc:w": "tsc -w -p src\\main\\typescript\\ ",
+    "babel:w": "babel -w src\\main\\typescript\\**\\*.js --watch --out-dir .\\src\\main\\resources\\static\\js\\",
+    "develop": "npm run tsc:w && npm run babel:w"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,14 @@
     "babel": "^6.5.1",
     "babel-cli": "^6.5.1",
     "babel-preset-es2015": "^6.5.0",
+    "event-stream": "^3.3.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-tslint": "^4.3.1",
+    "gulp-typescript": "^2.11.0",
+    "gulp-watch": "^4.3.5",
+    "run-sequence": "^1.1.5",
+    "tslint": "^3.3.0",
     "typescript": "^1.7.5"
   }
 }
